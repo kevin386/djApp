@@ -25,6 +25,11 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = (
+		os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
+)
+
+
 ALLOWED_HOSTS = []
 
 
