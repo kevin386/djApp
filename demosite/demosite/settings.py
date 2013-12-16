@@ -25,6 +25,11 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = (
+		os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
+)
+
+
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'demosite.books',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,7 +67,7 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 		'ENGINE': 'django.db.backends.mysql',
-		'NAME':'djdb',
+		'NAME':'pydb',
 		'USER':'root',
 		'PASSWORD':'123456',
 		#'HOST':'localhost',    #留空默认为localhost

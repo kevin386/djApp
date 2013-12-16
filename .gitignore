@@ -1,0 +1,4 @@
+#ignoe pyc
+*.pyc
+#ignoe tags
+tags
