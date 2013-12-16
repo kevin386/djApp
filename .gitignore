@@ -1,4 +1,6 @@
-#ignoe pyc
+#ignore .metada and .gitignore
+.metada
+#ignore ctags
+ctags
+#python obj
 *.pyc
-#ignoe tags
-tags
