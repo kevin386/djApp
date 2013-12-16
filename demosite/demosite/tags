@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOWED_HOSTS	settings.py	/^ALLOWED_HOSTS = []$/;"	v
+BASE_DIR	settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(__file__))$/;"	v
+DATABASES	settings.py	/^DATABASES = {$/;"	v
+DEBUG	settings.py	/^DEBUG = True$/;"	v
+Http404	views.py	/^from django.http import HttpResponse,Http404$/;"	i
+HttpResponse	views.py	/^from django.http import HttpResponse,Http404$/;"	i
+INSTALLED_APPS	settings.py	/^INSTALLED_APPS = ($/;"	v
+LANGUAGE_CODE	settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE_CLASSES	settings.py	/^MIDDLEWARE_CLASSES = ($/;"	v
+ROOT_URLCONF	settings.py	/^ROOT_URLCONF = 'demosite.urls'$/;"	v
+SECRET_KEY	settings.py	/^SECRET_KEY = 'm$u%1@*iq&^q!&c2m$ecf_q2y4j07ps@nu(5dty)ws+xl4rbj#'$/;"	v
+STATIC_URL	settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+TEMPLATE_DEBUG	settings.py	/^TEMPLATE_DEBUG = True$/;"	v
+TIME_ZONE	settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	settings.py	/^WSGI_APPLICATION = 'demosite.wsgi.application'$/;"	v
+admin	urls.py	/^from django.contrib import admin$/;"	i
+application	wsgi.py	/^application = get_wsgi_application()$/;"	v
+create_time	urls.py	/^from demosite.views import hello,create_time,hours_ahead$/;"	i
+create_time	views.py	/^def create_time(request):$/;"	f
+datetime	views.py	/^import datetime$/;"	i
+get_wsgi_application	wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	i
+hello	urls.py	/^from demosite.views import hello,create_time,hours_ahead$/;"	i
+hello	views.py	/^def hello(request):$/;"	f
+hours_ahead	urls.py	/^from demosite.views import hello,create_time,hours_ahead$/;"	i
+hours_ahead	views.py	/^def hours_ahead(request,offset):$/;"	f
+include	urls.py	/^from django.conf.urls import patterns, include, url$/;"	i
+os	settings.py	/^import os$/;"	i
+os	wsgi.py	/^import os$/;"	i
+patterns	urls.py	/^from django.conf.urls import patterns, include, url$/;"	i
+url	urls.py	/^from django.conf.urls import patterns, include, url$/;"	i
+urlpatterns	urls.py	/^urlpatterns = patterns('',$/;"	v
