@@ -1,6 +1,8 @@
 #ignore .metada and .gitignore
-.metada
+*.metada
 #ignore ctags
-ctags
+*ctags*
 #python obj
 *.pyc
+#ignore email password and account
+psw.cfg

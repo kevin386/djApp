@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+from __future__ import with_statement
 """
 Django settings for demosite project.
 
@@ -12,7 +13,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -32,6 +32,23 @@ TEMPLATE_DIRS = (
 
 ALLOWED_HOSTS = []
 
+#import password and account configures
+import ConfigParser as CP
+configPath = os.path.dirname(__file__) + "/psw.cfg"
+config = CP.ConfigParser()
+with open(configPath, 'r') as cfgfile:
+	config.readfp(cfgfile)
+	email_host = config.get("info",'addr')
+	email_psw = config.get("info",'psw')
+
+#Email settings
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = email_host
+print EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = email_psw 
+print EMAIL_HOST_PASSWORD
+EMAIL_PORT = 587
 
 # Application definition
 
@@ -52,6 +69,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	#'django.middleware.csrf.CsrfResponseMiddleware',
 )
 
 ROOT_URLCONF = 'demosite.urls'

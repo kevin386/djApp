@@ -11,9 +11,10 @@
 	</ul>
 	{% endif %}
 	<form action="/contact/" method="POST">
-		<p>Subject: <input type="TEXT" name="subject"></p>
-		<p>Your e-mail(optional): <input type="TEXT" name="email"></p>
-		<p>Message: <TEXTAREA name="message" rows='10' cols="50"</TEXTAREA>
+		{% csrf_token %}
+		<p>Subject: <input type="TEXT" name="subject" value="{{ subject }}"></p>
+		<p>Your e-mail(optional): <input type="TEXT" name="email" value="{{ email }}"></p>
+		<p>Message: <TEXTAREA name="message" rows='10' cols="50">{{ message }}</TEXTAREA></p>
 		<input type="SUBMIT" value="Submit">
 	</form>
 </BODY>

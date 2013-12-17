@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from demosite.views import hello,current_datetime,hours_ahead,display_meta
 from demosite.books.views import search_form,search
+from demosite.contact.views import contact,thanks
 
 from django.contrib import admin
 admin.autodiscover()
@@ -17,4 +18,6 @@ urlpatterns = patterns('',
 	url(r'^meta/$', display_meta),
 	url(r'^search-form/$',search_form),
 	url(r'^search/$',search),
+	url(r'^contact/$',contact),
+	url(r'^contact/thanks/$', thanks),
 )
